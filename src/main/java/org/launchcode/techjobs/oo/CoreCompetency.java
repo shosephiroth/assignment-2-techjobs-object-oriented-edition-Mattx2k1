@@ -3,8 +3,20 @@ package org.launchcode.techjobs.oo;
 import java.util.Objects;
 
 public class CoreCompetency {
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
 
     private int id;
+
+    public CoreCompetency(int id) {
+        this.id = id;
+    }
+
     private static int nextId = 1;
     private String value;
 

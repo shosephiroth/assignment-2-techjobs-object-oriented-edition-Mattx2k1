@@ -35,6 +35,9 @@ public class Job {
         return id;
     }
 
+    // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
+    //  match.
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -48,9 +51,48 @@ public class Job {
         return Objects.hash(id);
     }
 
-    // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
-    //  match.
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Employer getEmployer() {
+        return employer;
+    }
+
+    public void setEmployer(Employer employer) {
+        this.employer = employer;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public PositionType getPositionType() {
+        return positionType;
+    }
+
+    public void setPositionType(PositionType positionType) {
+        this.positionType = positionType;
+    }
+
+    public CoreCompetency getCoreCompetency() {
+        return coreCompetency;
+    }
+
+    public void setCoreCompetency(CoreCompetency coreCompetency) {
+        this.coreCompetency = coreCompetency;
+    }
 }

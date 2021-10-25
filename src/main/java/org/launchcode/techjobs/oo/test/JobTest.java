@@ -6,8 +6,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.launchcode.techjobs.oo.*;
 
-import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertTrue;
+import static junit.framework.TestCase.*;
 
 /**
  * Created by LaunchCode
@@ -28,6 +27,9 @@ public class JobTest {
 
     @Test
     public void testJobConstructorSetsAllFields() {
+        assertNotNull(testJob1);
+        assertNotNull(testJob2);
+        assertNotNull(testJob3);
         assertTrue(testJob3 instanceof Job);
         assertTrue(testJob3.getEmployer() instanceof Employer);
         assertTrue(testJob3.getLocation() instanceof Location);

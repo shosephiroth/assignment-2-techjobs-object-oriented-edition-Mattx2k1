@@ -28,8 +28,8 @@ public class JobTest {
 
     @Test
     public void testJobConstructorSetsAllFields() {
-        assertTrue(testJob3.getName(), Boolean.parseBoolean("Product tester")); // IntelliJ suggested this syntax
         assertTrue(testJob3 instanceof Job);
+        assertEquals(testJob3.getName(), "Product tester");
         assertEquals(testJob3.getEmployer(), "ACME");
         assertEquals(testJob3.getLocation(), "Desert");
         assertEquals(testJob3.getPositionType(), "Quality control");
@@ -39,6 +39,8 @@ public class JobTest {
     @Test
     public void testJobsForEquality() {
         assertEquals(testJob3, testJob4);
+
+
 
 
     }

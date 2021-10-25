@@ -29,11 +29,24 @@ public class JobTest {
     @Test
     public void testJobConstructorSetsAllFields() {
         assertTrue(testJob3 instanceof Job);
-        assertEquals(testJob3.getName(), "Product tester");
-        assertEquals(testJob3.getEmployer(), "ACME");
-        assertEquals(testJob3.getLocation(), "Desert");
-        assertEquals(testJob3.getPositionType(), "Quality control");
-        assertEquals(testJob3.getCoreCompetency(), "Persistence");
+        assertTrue(testJob3.getEmployer() instanceof Employer);
+        assertTrue(testJob3.getLocation() instanceof Location);
+        assertTrue(testJob3.getPositionType() instanceof PositionType);
+        assertTrue(testJob3.getCoreCompetency() instanceof CoreCompetency);
+
+// I had expected and actual switched around. No new tests passed though =/
+
+//        assertEquals(testJob3.getName(), "Product tester");
+//        assertEquals(testJob3.getEmployer(), "ACME");
+//        assertEquals(testJob3.getLocation(), "Desert");
+//        assertEquals(testJob3.getPositionType(), "Quality control");
+//        assertEquals(testJob3.getCoreCompetency(), "Persistence");
+
+        assertEquals("Product tester", testJob3.getName());
+        assertEquals("ACME", testJob3.getEmployer());
+        assertEquals("Desert", testJob3.getLocation());
+        assertEquals("Quality control", testJob3.getPositionType());
+        assertEquals("Persistence", testJob3.getCoreCompetency());
     }
 
     @Test

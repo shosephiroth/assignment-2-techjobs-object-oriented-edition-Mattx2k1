@@ -7,6 +7,7 @@ import org.junit.runners.JUnit4;
 import org.launchcode.techjobs.oo.Job;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 /**
  * Created by LaunchCode
@@ -19,7 +20,8 @@ public class JobTest {
 
     @Test
     public void testSettingJobId() {
-        assertEquals(testJob1, testJob2);
+        assertEquals(testJob1.getId(), testJob2.getId(), 1);
+
     }
 
 }

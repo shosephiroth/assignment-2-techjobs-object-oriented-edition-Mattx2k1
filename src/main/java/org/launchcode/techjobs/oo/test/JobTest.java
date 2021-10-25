@@ -21,6 +21,7 @@ public class JobTest {
     @Test
     public void testSettingJobId() {
         assertEquals(testJob1.getId(), testJob2.getId(), 1);
+        System.out.println("IDs match"); // my own identifier test has passed; (It did!)
 
     }
 

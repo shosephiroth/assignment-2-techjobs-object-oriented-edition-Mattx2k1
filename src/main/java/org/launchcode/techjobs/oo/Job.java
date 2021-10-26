@@ -99,18 +99,18 @@ public class Job {
 
     @Override
     public String toString() {
-        return "\n" + "Job{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", employer=" + employer + //getValue()
-                ", location=" + location +
-                ", positionType=" + positionType +
-                ", coreCompetency=" + coreCompetency +
-                '}' + "\n";
+        return "\n" +
+                "ID: " + id +
+                "\nName: " + name +
+                "\nEmployer: " + employer.getValue() + //getValue()
+                "\nLocation: " + location.getValue() +
+                "\nPosition Type: " + positionType.getValue() +
+                "\nCore Competency: " + coreCompetency.getValue() +
+                "\n";
     }
 }
 
-//ID:  _______
+//        ID:  _______
 //        Name: _______
 //        Employer: _______
 //        Location: _______

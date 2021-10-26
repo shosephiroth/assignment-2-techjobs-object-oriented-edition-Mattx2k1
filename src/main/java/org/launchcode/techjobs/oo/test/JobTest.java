@@ -24,6 +24,7 @@ public class JobTest {
     public void testSettingJobId() {
         Job testJob1 = new Job();
         Job testJob2 = new Job();
+        assertEquals(testJob1.getId(), testJob2.getId(), 1);
         assertNotEquals(testJob1.getId(), testJob2.getId());
 
     }
@@ -63,9 +64,6 @@ public class JobTest {
         Job testJob3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         Job testJob4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         assertFalse(testJob3.equals(testJob4));
-
-
-
 
     }
 

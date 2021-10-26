@@ -96,4 +96,23 @@ public class Job {
     public int getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "\n" + "Job{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", employer=" + employer + //getValue()
+                ", location=" + location +
+                ", positionType=" + positionType +
+                ", coreCompetency=" + coreCompetency +
+                '}' + "\n";
+    }
 }
+
+//ID:  _______
+//        Name: _______
+//        Employer: _______
+//        Location: _______
+//        Position Type: _______
+//        Core Competency: _______

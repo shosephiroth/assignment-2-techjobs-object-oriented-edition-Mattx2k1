@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.launchcode.techjobs.oo.*;
 
-import static junit.framework.TestCase.*;
-import static org.junit.Assert.assertNotEquals;
+// import static junit.framework.TestCase.*; // imported another assert from another library
+import static org.junit.Assert.*;
 
 /**
  * Created by LaunchCode

@@ -80,6 +80,14 @@ public class JobTest {
         assertEquals("\nID: " + testJob4.getId() + "\nName: Product tester\nEmployer: ACME\nLocation: Desert\nPosition Type: Quality control\nCore Competency: Persistence\n" , testJob4.toString());
 
     }
+
+    @Test
+    public void testToStringHandlesEmptyField() {
+        Job testJob5 = new Job("Product tester", new Employer(""), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency(""));
+        assertEquals("\nID: " + testJob5.getId() + "\nName: Product tester\nEmployer: Data Not Available\nLocation: Desert\nPosition Type: Quality control\nCore Competency: Data Not Available\n" , testJob5.toString());
+
+
+    }
 }
 
 //        ID:  _______

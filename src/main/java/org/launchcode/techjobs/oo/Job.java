@@ -54,8 +54,18 @@ public class Job {
 
 
     public String getName() {
+        if (name == null || name.isEmpty()) {
+            return "Data not available";
+        }
         return name;
     }
+
+//    public String getValue() {
+//        if (value == null || value.isEmpty()) {
+//            return "Data Not Available";
+//        }
+//        return value;
+//    }
 
     public void setName(String name) {
         this.name = name;

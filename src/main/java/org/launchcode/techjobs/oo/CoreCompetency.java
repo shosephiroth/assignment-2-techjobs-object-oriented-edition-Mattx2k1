@@ -43,6 +43,9 @@ public class CoreCompetency {
 
 
     public String getValue() {
+        if (value == null || value.isEmpty()) {
+            return "Data not available";
+        }
         return value;
     }
 

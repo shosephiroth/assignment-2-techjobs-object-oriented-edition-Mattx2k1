@@ -16,8 +16,8 @@ import static org.junit.Assert.assertNotEquals;
 public class JobTest {
 //    Job testJob1 = new Job();
 //    Job testJob2 = new Job();
-    //Job testJob3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-    //Job testJob4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+//    Job testJob3 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+//    Job testJob4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
 
     @Test
@@ -84,7 +84,7 @@ public class JobTest {
     @Test
     public void testToStringHandlesEmptyField() {
         Job testJob5 = new Job("Product tester", new Employer(""), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency(""));
-        assertEquals("\nID: " + testJob5.getId() + "\nName: Product tester\nEmployer: Data Not Available\nLocation: Desert\nPosition Type: Quality control\nCore Competency: Data Not Available\n" , testJob5.toString());
+        assertEquals("\nID: " + testJob5.getId() + "\nName: Product tester\nEmployer: Data not available\nLocation: Desert\nPosition Type: Quality control\nCore Competency: Data not available\n" , testJob5.toString());
 
 
     }

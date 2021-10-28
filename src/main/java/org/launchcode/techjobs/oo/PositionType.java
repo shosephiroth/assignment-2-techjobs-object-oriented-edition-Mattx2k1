@@ -50,6 +50,9 @@ public class PositionType {
     }
 
     public String getValue() {
+        if (value == null || value.isEmpty()) {
+            return "Data not available";
+        }
         return value;
     }
 

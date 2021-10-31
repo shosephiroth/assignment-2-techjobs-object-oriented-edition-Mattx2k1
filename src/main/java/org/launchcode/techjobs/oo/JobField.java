@@ -2,10 +2,10 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class JobField {
-    private int id;
-    private static int nextId = 1;
-    private String value;
+public abstract class JobField {
+    public int id;
+    public static int nextId = 1;
+    public String value;
 
     // Custom toString, equals, and hashCode methods:
 
